@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="learn">learning is very interesting.</span>
+    <button id="change">Change</button>
+
+    <script>
+        function onclick(){
+            let learn = document.getElementById('learn');
+            learn.innerText = 'learning REACT is very interesting.';
+        }
+
+        let change=document.getElementById('change');
+        change.addEventListener('click',onclick);
+
+    </script>
+</body>
+</html>
