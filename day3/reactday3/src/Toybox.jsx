@@ -13,7 +13,7 @@ function Toybox() {
           <ul>
               {toys.map(toy => <li key={toy}>{toy}</li>)}
           </ul>
-          <button onClick={() => addtoy('doll')}>Add doll</button>
+          <button onClick={()=> addtoy('doll')}>Add doll</button>
           <button onClick={() => addtoy('puzzle')}>Add puzzle</button>
           <button onClick={() => addtoy('card')}>Add card</button>
     </div>

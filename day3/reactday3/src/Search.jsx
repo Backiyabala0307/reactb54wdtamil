@@ -1,7 +1,7 @@
 
 import React,{useState} from 'react'
 
-function Search() {
+function Search( props ) {
     // let searchtext = "";
     const [searchtext, setSeachtext] = useState("");
 
@@ -12,8 +12,8 @@ function Search() {
     }
   return (
     <div>
-          <h1>Search for text</h1>
-          <label htmlfor="search">search:</label>
+      <h1>Search for text-{ props.name}</h1>
+          <label htmlFor="search">search:</label>
           <input type="text" id="search" onChange={handler}></input> 
 
           <p>searching Text :{searchtext}</p>
